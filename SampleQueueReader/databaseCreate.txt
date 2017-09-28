@@ -1,6 +1,6 @@
 CREATE TABLE yoyoTable (
     WorkArea nvarchar(50) not null,
-    SerialNumber nvarhar(50) not null,
+    SerialNumber nvarchar(50) not null,
     Line nvarchar(50) not null,
     State nvarchar(50) not null,
     Reason nvarchar(50),
