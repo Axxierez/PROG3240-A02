@@ -1,4 +1,4 @@
-CREATE TABLE yoyoTable (
+CREATE TABLE yoyo (
     WorkArea nvarchar(50) not null,
     SerialNumber nvarchar(50) not null,
     Line nvarchar(50) not null,

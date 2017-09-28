@@ -32,3 +32,12 @@ G:\Third_Year\PROG3240\Assignments\AGalkaAssignment2\SampleQueueReader\SampleQue
 G:\Third_Year\PROG3240\Assignments\AGalkaAssignment2\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.csproj.CoreCompileInputs.cache
 G:\Third_Year\PROG3240\Assignments\AGalkaAssignment2\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.exe
 G:\Third_Year\PROG3240\Assignments\AGalkaAssignment2\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.pdb
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\bin\Debug\SampleQueueReader.exe
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\bin\Debug\SampleQueueReader.pdb
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.csprojResolveAssemblyReference.cache
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.frmMain.resources
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.Properties.Resources.resources
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.csproj.GenerateResource.Cache
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.csproj.CoreCompileInputs.cache
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.exe
+C:\Users\agalka1632\Desktop\PROG3240-A02\SampleQueueReader\SampleQueueReader\obj\x86\Debug\SampleQueueReader.pdb

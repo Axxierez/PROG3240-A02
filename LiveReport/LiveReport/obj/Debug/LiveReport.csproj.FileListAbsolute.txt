@@ -1,0 +1,10 @@
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\bin\Debug\LiveReport.exe.config
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\bin\Debug\LiveReport.exe
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\bin\Debug\LiveReport.pdb
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\obj\Debug\LiveReport.csprojResolveAssemblyReference.cache
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\obj\Debug\LiveReport.Form1.resources
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\obj\Debug\LiveReport.Properties.Resources.resources
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\obj\Debug\LiveReport.csproj.GenerateResource.Cache
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\obj\Debug\LiveReport.csproj.CoreCompileInputs.cache
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\obj\Debug\LiveReport.exe
+C:\Users\agalka1632\Desktop\PROG3240-A02\LiveReport\LiveReport\obj\Debug\LiveReport.pdb

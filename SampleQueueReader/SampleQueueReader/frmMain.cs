@@ -82,7 +82,7 @@ namespace SampleQueueReader
                 SqlCommand cmd = new SqlCommand();
                 SqlDataReader reader;
                 string[] values = e.Message.Body.ToString().Split(',');
-                cmd.CommandText = "INSERT INTO yoyoTable VALUES('" +
+                cmd.CommandText = "INSERT INTO yoyo VALUES('" +
                     values[0] + "','" +
                     values[1] + "','" +
                     values[2] + "','" +
