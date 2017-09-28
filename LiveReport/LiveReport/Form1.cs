@@ -37,17 +37,17 @@ namespace LiveReport
 
 
             //Total Parts Molded
-            cmd.CommandText = "select count(*) from yoyoTable where state like 'QUEUE_INSPECTION_1';";
+            cmd.CommandText = "select count(*) from yoyo where state like 'QUEUE_INSPECTION_1';";
             totalMoldedCount = GetCount(cmd.ExecuteReader(), lblTotalMoldedCount);
             
             //Total Parts Successfully Molded
-            cmd.CommandText = "select count(*) from yoyoTable where [State] like 'QUEUE_PAINT';";
+            cmd.CommandText = "select count(*) from yoyo where [State] like 'QUEUE_PAINT';";
             totalSuccessfulMoldCount= GetCount(cmd.ExecuteReader(), lblTotalSuccessMoldCount);
 
             //Yield at Mold
             lblYieldAtMoldCount.Text = CalculateYield(totalSuccessfulMoldCount, totalMoldedCount);
 
-            cmd.CommandText = "select count(*) from yoyoTable where [State] like 'QUEUE_ASSEMBLY';";
+            cmd.CommandText = "select count(*) from yoyo where [State] like 'QUEUE_ASSEMBLY';";
             totalSuccessfullPaintCount = GetCount(cmd.ExecuteReader(), lblSuccessfullyPaintedCount);
 
 
