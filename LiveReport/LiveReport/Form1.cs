@@ -29,6 +29,7 @@ namespace LiveReport
             double totalMoldedCount = 0;
             double totalSuccessfulMoldCount = 0;
             double totalSuccessfullPaintCount = 0;
+            double totalPartsSuccessfullyAsbCount = 0;
 
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
@@ -54,6 +55,12 @@ namespace LiveReport
             //Yield at Paint
             lblYieldAtPaintCount.Text = CalculateYield(totalSuccessfullPaintCount, totalSuccessfulMoldCount);
 
+            //Total parts successfully assembled
+            cmd.CommandText = "select count(*) from yoyo where [State] like 'PACKAGE';";            totalPartsSuccessfullyAsbCount = GetCount(cmd.ExecuteReader(), lblTotalPartsSuccessfullyAsbCount);
+
+            //Yield at Assembly
+            lblYieldAtAssemblyCount.Text = CalculateYield(totalPartsSuccessfullyAsbCount, totalSuccessfullPaintCount);
+
         }
 
         private string CalculateYield(double successfulCount, double totalCount)
@@ -73,5 +80,6 @@ namespace LiveReport
             }
             return 0;
         }
+        
     }
 }
