@@ -16,8 +16,8 @@ namespace SampleQueueReader
         MessageQueue msmq = new MessageQueue();
         Boolean bRead = false;
         String queueName = "\\private$\\yoyo";
-        String connectionString="";
         SqlConnection conn;
+
         public frmMain()
         {
             InitializeComponent();
@@ -54,11 +54,7 @@ namespace SampleQueueReader
                 msmq.Path = "Formatname:Direct=os:" + txtQueueServer.Text + queueName;
                 bRead = true;
                 msmq.BeginReceive();
-                connectionString = txtDatabaseConnectionString.Text;
-                conn= new SqlConnection(connectionString);
-                conn.ChangeDatabase("yoyoData");
-                conn.Open();
-
+                conn = Database.openConnection();
                 IsRunning(true);
             }
 
@@ -79,22 +75,9 @@ namespace SampleQueueReader
                 {
                     msmq.BeginReceive();
                 }
-                
-                SqlCommand cmd = new SqlCommand();
-                SqlDataReader reader;
-                string[] values = e.Message.Body.ToString().Split(',');
-                cmd.CommandText = "INSERT INTO yoyo VALUES('" +
-                    values[0] + "','" +
-                    values[1] + "','" +
-                    values[2] + "','" +
-                    values[3] + "','" +
-                    values[4] + "','" +
-                    values[5] + "','" +
-                    values[6] + "'); ";
-                cmd.CommandType = CommandType.Text;
-                cmd.Connection = conn;
-                reader = cmd.ExecuteReader();
-                reader.Close();
+
+                Database.insertYoyoData(e.Message.Body.ToString().Split(','),conn);
+
 
             }
             catch
@@ -107,7 +90,7 @@ namespace SampleQueueReader
         {
             bRead = false;
             IsRunning(false);
-            conn.Close();
+            Database.closeConnection(conn);
         }
 
         private void btnClear_Click_1(object sender, EventArgs e)
@@ -164,12 +147,17 @@ namespace SampleQueueReader
                     MessageBox.Show("Cannot read - probably empty queue or queue non existent");
                 }
             }
-
         }
 
         private void btnPurgeQ_Click(object sender, EventArgs e)
         {
             msmq.Purge();
+        }
+
+        public static string getConnectionString()
+        {
+            TextBox t = Application.OpenForms["frmMain"].Controls["txtDatabaseConnectionString"] as TextBox; 
+            return t.Text;
         }
 
     }

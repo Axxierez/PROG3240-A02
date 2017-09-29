@@ -200,8 +200,8 @@
         private System.Windows.Forms.CheckBox chkCount;
         private System.Windows.Forms.Button btnSingleRead;
         private System.Windows.Forms.Button btnPurgeQ;
-        private System.Windows.Forms.TextBox txtDatabaseConnectionString;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txtDatabaseConnectionString;
     }
 }
 
