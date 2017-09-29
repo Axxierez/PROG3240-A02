@@ -1,3 +1,7 @@
+CREATE DATABASE yoyoData;
+
+USE yoyoData;
+
 CREATE TABLE yoyo (
     WorkArea nvarchar(50) not null,
     SerialNumber nvarchar(50) not null,

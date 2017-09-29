@@ -56,6 +56,7 @@ namespace SampleQueueReader
                 msmq.BeginReceive();
                 connectionString = txtDatabaseConnectionString.Text;
                 conn= new SqlConnection(connectionString);
+                conn.ChangeDatabase("yoyoData");
                 conn.Open();
 
                 IsRunning(true);
