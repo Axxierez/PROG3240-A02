@@ -47,9 +47,12 @@ namespace LiveReport
             //Yield at Mold
             lblYieldAtMoldCount.Text = CalculateYield(totalSuccessfulMoldCount, totalMoldedCount);
 
+            //Total Parts Successfully Painted
             cmd.CommandText = "select count(*) from yoyo where [State] like 'QUEUE_ASSEMBLY';";
             totalSuccessfullPaintCount = GetCount(cmd.ExecuteReader(), lblSuccessfullyPaintedCount);
-
+            
+            //Yield at Paint
+            lblYieldAtPaintCount.Text = CalculateYield(totalSuccessfullPaintCount, totalSuccessfulMoldCount);
 
         }
 

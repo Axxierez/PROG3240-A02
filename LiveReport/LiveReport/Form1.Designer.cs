@@ -36,10 +36,12 @@
             this.lblTotalSuccessMold = new System.Windows.Forms.Label();
             this.lblConnectionString = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblYieldAtMold = new System.Windows.Forms.Label();
-            this.lblYieldAtMoldCount = new System.Windows.Forms.Label();
-            this.lblSuccessfullyPainted = new System.Windows.Forms.Label();
             this.lblSuccessfullyPaintedCount = new System.Windows.Forms.Label();
+            this.lblSuccessfullyPainted = new System.Windows.Forms.Label();
+            this.lblYieldAtMoldCount = new System.Windows.Forms.Label();
+            this.lblYieldAtMold = new System.Windows.Forms.Label();
+            this.lblYieldAtPaint = new System.Windows.Forms.Label();
+            this.lblYieldAtPaintCount = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,6 +109,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblYieldAtPaintCount);
+            this.groupBox1.Controls.Add(this.lblYieldAtPaint);
             this.groupBox1.Controls.Add(this.lblSuccessfullyPaintedCount);
             this.groupBox1.Controls.Add(this.lblSuccessfullyPainted);
             this.groupBox1.Controls.Add(this.lblYieldAtMoldCount);
@@ -121,23 +125,14 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
-            // lblYieldAtMold
+            // lblSuccessfullyPaintedCount
             // 
-            this.lblYieldAtMold.AutoSize = true;
-            this.lblYieldAtMold.Location = new System.Drawing.Point(85, 88);
-            this.lblYieldAtMold.Name = "lblYieldAtMold";
-            this.lblYieldAtMold.Size = new System.Drawing.Size(69, 13);
-            this.lblYieldAtMold.TabIndex = 6;
-            this.lblYieldAtMold.Text = "Yield At Mold";
-            // 
-            // lblYieldAtMoldCount
-            // 
-            this.lblYieldAtMoldCount.AutoSize = true;
-            this.lblYieldAtMoldCount.Location = new System.Drawing.Point(170, 88);
-            this.lblYieldAtMoldCount.Name = "lblYieldAtMoldCount";
-            this.lblYieldAtMoldCount.Size = new System.Drawing.Size(13, 13);
-            this.lblYieldAtMoldCount.TabIndex = 7;
-            this.lblYieldAtMoldCount.Text = "0";
+            this.lblSuccessfullyPaintedCount.AutoSize = true;
+            this.lblSuccessfullyPaintedCount.Location = new System.Drawing.Point(170, 115);
+            this.lblSuccessfullyPaintedCount.Name = "lblSuccessfullyPaintedCount";
+            this.lblSuccessfullyPaintedCount.Size = new System.Drawing.Size(13, 13);
+            this.lblSuccessfullyPaintedCount.TabIndex = 9;
+            this.lblSuccessfullyPaintedCount.Text = "0";
             // 
             // lblSuccessfullyPainted
             // 
@@ -148,14 +143,41 @@
             this.lblSuccessfullyPainted.TabIndex = 8;
             this.lblSuccessfullyPainted.Text = "Total Successfully Painted";
             // 
-            // lblSuccessfullyPaintedCount
+            // lblYieldAtMoldCount
             // 
-            this.lblSuccessfullyPaintedCount.AutoSize = true;
-            this.lblSuccessfullyPaintedCount.Location = new System.Drawing.Point(170, 115);
-            this.lblSuccessfullyPaintedCount.Name = "lblSuccessfullyPaintedCount";
-            this.lblSuccessfullyPaintedCount.Size = new System.Drawing.Size(13, 13);
-            this.lblSuccessfullyPaintedCount.TabIndex = 9;
-            this.lblSuccessfullyPaintedCount.Text = "0";
+            this.lblYieldAtMoldCount.AutoSize = true;
+            this.lblYieldAtMoldCount.Location = new System.Drawing.Point(170, 88);
+            this.lblYieldAtMoldCount.Name = "lblYieldAtMoldCount";
+            this.lblYieldAtMoldCount.Size = new System.Drawing.Size(13, 13);
+            this.lblYieldAtMoldCount.TabIndex = 7;
+            this.lblYieldAtMoldCount.Text = "0";
+            // 
+            // lblYieldAtMold
+            // 
+            this.lblYieldAtMold.AutoSize = true;
+            this.lblYieldAtMold.Location = new System.Drawing.Point(85, 88);
+            this.lblYieldAtMold.Name = "lblYieldAtMold";
+            this.lblYieldAtMold.Size = new System.Drawing.Size(69, 13);
+            this.lblYieldAtMold.TabIndex = 6;
+            this.lblYieldAtMold.Text = "Yield At Mold";
+            // 
+            // lblYieldAtPaint
+            // 
+            this.lblYieldAtPaint.AutoSize = true;
+            this.lblYieldAtPaint.Location = new System.Drawing.Point(85, 138);
+            this.lblYieldAtPaint.Name = "lblYieldAtPaint";
+            this.lblYieldAtPaint.Size = new System.Drawing.Size(69, 13);
+            this.lblYieldAtPaint.TabIndex = 10;
+            this.lblYieldAtPaint.Text = "Yield at Paint";
+            // 
+            // lblYieldAtPaintCount
+            // 
+            this.lblYieldAtPaintCount.AutoSize = true;
+            this.lblYieldAtPaintCount.Location = new System.Drawing.Point(170, 138);
+            this.lblYieldAtPaintCount.Name = "lblYieldAtPaintCount";
+            this.lblYieldAtPaintCount.Size = new System.Drawing.Size(13, 13);
+            this.lblYieldAtPaintCount.TabIndex = 11;
+            this.lblYieldAtPaintCount.Text = "0";
             // 
             // Form1
             // 
@@ -189,6 +211,8 @@
         private System.Windows.Forms.Label lblYieldAtMold;
         private System.Windows.Forms.Label lblSuccessfullyPaintedCount;
         private System.Windows.Forms.Label lblSuccessfullyPainted;
+        private System.Windows.Forms.Label lblYieldAtPaintCount;
+        private System.Windows.Forms.Label lblYieldAtPaint;
     }
 }
 
